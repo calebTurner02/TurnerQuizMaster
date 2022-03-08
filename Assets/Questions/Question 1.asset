@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 1
   m_EditorClassIdentifier: 
   strQuestion: What does rm do in r?
+  strAnswer:
+  - remove part of the code
+  - remove a file or folder
+  - 'add a file or folder '
+  - add a part of the code
+  intCorrectAnswerIndex: 1
