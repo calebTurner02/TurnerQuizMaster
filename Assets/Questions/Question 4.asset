@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 4
   m_EditorClassIdentifier: 
   strQuestion: What does history do in r?
+  strAnswer:
+  - shows the history of commands that you used
+  - shows the history of changes made to your repo
+  - tells you what a command does
+  - tells you if you got an error
+  intCorrectAnswerIndex: 0

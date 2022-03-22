@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 2
   m_EditorClassIdentifier: 
   strQuestion: What does cp do in r?
+  strAnswer:
+  - copy a folder from one location to another
+  - save the code
+  - 'copy a part of the code to be used later '
+  - copy a file from one location to another
+  intCorrectAnswerIndex: 3

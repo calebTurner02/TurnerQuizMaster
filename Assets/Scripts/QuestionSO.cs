@@ -25,3 +25,4 @@ public class QuestionSO : ScriptableObject
        return intCorrectAnswerIndex;
    }
 }
+

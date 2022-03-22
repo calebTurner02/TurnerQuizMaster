@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 5
   m_EditorClassIdentifier: 
   strQuestion: What does mkdir do in r?
+  strAnswer:
+  - change a directory
+  - remove a directory
+  - shows you the current directory
+  - make a directory
+  intCorrectAnswerIndex: 3
