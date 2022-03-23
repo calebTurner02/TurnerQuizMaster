@@ -28,9 +28,17 @@ public class Quiz : MonoBehaviour
    [Header("Timer")]
    [SerializeField] Image timerImage;
    Timer timer;
+
+    [Header("Score")]
+    [SerializeField] TextMeshProUGUI scoreText;
+    ScoreKeeper scoreKeeper;
+
+
     void Start()
     {
         timer = FindObjectOfType<Timer>(); 
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
+
     } 
 
     void Update() 
@@ -55,6 +63,7 @@ public class Quiz : MonoBehaviour
         displayAnswer(index);
         setButtonState(false);
         timer.cancelTimer();
+        scoreText.text = "Score: " + scoreKeeper.intCalculateScore() + "%";
     }
 
     void displayAnswer(int index)
@@ -65,6 +74,7 @@ public class Quiz : MonoBehaviour
             questionText.text = "correct!";
             buttonImage = answerButtons[index].GetComponent<Image>();
             buttonImage.sprite = correctAnswerSprite;
+            scoreKeeper.IncrementCorrectAnswers();
         }
         else 
         {
@@ -86,6 +96,7 @@ public class Quiz : MonoBehaviour
             setDefaultButtonStates();
             GetRandomQuestion();
             DisplayQuestion();
+            scoreKeeper.incrementQuestionsSeen();
         }
     }
 
